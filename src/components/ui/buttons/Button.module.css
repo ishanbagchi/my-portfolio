@@ -1,0 +1,33 @@
+.btn {
+	cursor: pointer;
+	display: inline-flex;
+	padding: 8px 16px;
+	align-items: flex-start;
+	gap: 10px;
+
+	font-family: 'Fira Code', monospace;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: normal;
+}
+
+.primary {
+	border: 1px solid #c778dd;
+	background: transparent;
+	color: #fff;
+
+	&:hover {
+		background: rgba(199, 120, 221, 0.2);
+	}
+}
+
+.secondary {
+	border: 1px solid #abb2bf;
+	background: transparent;
+	color: #abb2bf;
+
+	&:hover {
+		background: rgba(171, 178, 191, 0.2);
+	}
+}
