@@ -1,0 +1,31 @@
+.homeMainWrapper {
+	align-items: center;
+	display: flex;
+	justify-content: space-between;
+	padding: 120px 170px;
+
+	& div:first-child {
+		flex: 3;
+	}
+
+	& div:last-child {
+		flex: 2;
+	}
+}
+
+.textWrapper {
+	padding: 60px 0;
+}
+
+.mainText {
+	color: var(--white, #fff);
+	font-family: Fira Code;
+	font-size: 32px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: normal;
+
+	& span {
+		color: var(--primary, #c778dd);
+	}
+}

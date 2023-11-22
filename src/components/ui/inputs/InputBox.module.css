@@ -1,0 +1,93 @@
+.inputWrapper {
+	position: relative;
+	width: fit-content;
+}
+input {
+	background: transparent;
+	border: 1px solid var(--gray, #abb2bf);
+	color: #fff;
+	display: block;
+	font-family: 'Fira Code', monospace;
+	font-size: 16px;
+	padding: 8px;
+}
+input:focus {
+	border: 1px solid #fff;
+	outline: none;
+}
+label {
+	-moz-transition: 0.2s ease all;
+	-webkit-transition: 0.2s ease all;
+	background-color: #282c33;
+	color: #abb2bf;
+	font-family: 'Fira Code', monospace;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 400;
+	left: 9px;
+	line-height: normal;
+	padding: 0 4px;
+	pointer-events: none;
+	position: absolute;
+	top: 9px;
+	transition: 0.2s ease all;
+}
+input:focus ~ label,
+input:valid ~ label {
+	color: #fff;
+	font-size: 14px;
+	left: 12px;
+	top: -10px;
+}
+.bar {
+	display: block;
+	position: relative;
+	width: 300px;
+}
+.bar:before,
+.bar:after {
+	-moz-transition: 0.2s ease all;
+	-webkit-transition: 0.2s ease all;
+	background: #5264ae;
+	bottom: 1px;
+	content: '';
+	height: 2px;
+	position: absolute;
+	transition: 0.2s ease all;
+	width: 0px;
+}
+.bar:before {
+	left: 50%;
+}
+.bar:after {
+	right: 50%;
+}
+
+/* ANIMATIONS ================ */
+@-webkit-keyframes inputHighlighter {
+	from {
+		background: #5264ae;
+	}
+	to {
+		background: transparent;
+		width: 0;
+	}
+}
+@-moz-keyframes inputHighlighter {
+	from {
+		background: #5264ae;
+	}
+	to {
+		background: transparent;
+		width: 0;
+	}
+}
+@keyframes inputHighlighter {
+	from {
+		background: #5264ae;
+	}
+	to {
+		background: transparent;
+		width: 0;
+	}
+}

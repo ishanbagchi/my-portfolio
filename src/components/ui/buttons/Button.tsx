@@ -25,14 +25,12 @@ const Button: FC<Props> = ({
 		}
 	}
 	return (
-		<div>
-			<button
-				className={`${styles.btn} ${getVariantClassNames()}`}
-				{...props}
-			>
-				{children}
-			</button>
-		</div>
+		<button
+			className={`${styles.btn} ${getVariantClassNames()}`}
+			{...props}
+		>
+			{children}
+		</button>
 	)
 }
 
