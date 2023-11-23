@@ -5,12 +5,14 @@ import styles from './Button.module.css'
 interface Props extends React.HTMLAttributes<HTMLButtonElement> {
 	variant?: ButtonVariant
 	disabled?: boolean
+	className?: string
 	children?: React.ReactNode
 }
 
 const Button: FC<Props> = ({
 	variant = ButtonVariant.PRIMARY,
 	disabled = false,
+	className,
 	children,
 	...props
 }) => {
@@ -26,7 +28,7 @@ const Button: FC<Props> = ({
 	}
 	return (
 		<button
-			className={`${styles.btn} ${getVariantClassNames()}`}
+			className={`${styles.btn} ${getVariantClassNames()} ${className}`}
 			{...props}
 		>
 			{children}

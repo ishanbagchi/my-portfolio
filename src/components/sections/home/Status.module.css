@@ -1,0 +1,30 @@
+.statusWrapper {
+	display: flex;
+	width: 25vw;
+	padding: 8px;
+	align-items: center;
+	gap: 10px;
+	border: 1px solid var(--gray, #abb2bf);
+	background: var(--background, #282c33);
+}
+
+.statusBox {
+	width: 16px;
+	height: 16px;
+	flex-shrink: 0;
+	border: 1px solid var(--primary, #c778dd);
+	background: var(--primary, #c778dd);
+}
+
+.statusText {
+	color: var(--gray, #abb2bf);
+	font-family: Fira Code;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: normal;
+
+	& span {
+		font-weight: 600;
+	}
+}
