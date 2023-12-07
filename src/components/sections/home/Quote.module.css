@@ -1,0 +1,60 @@
+.quoteWrapper {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+}
+
+.quoteTextWrapper {
+	display: inline-flex;
+	padding: 32px 0;
+	height: 30px;
+	align-items: flex-start;
+	gap: 10px;
+	border: 1px solid #abb2bf;
+	background: #282c33;
+}
+
+.quoteTextWrapper::before {
+	position: relative;
+	top: -50px;
+	left: 20px;
+	font-size: 60px;
+	content: '“';
+	display: block;
+	height: 40px;
+	background-color: #282c33;
+}
+
+.quoteTextWrapper::after {
+	position: relative;
+	bottom: -40px;
+	right: 20px;
+	font-size: 60px;
+	content: '”';
+	display: block;
+	height: 40px;
+	background-color: #282c33;
+}
+
+.quoteText {
+	color: #fff;
+	font-family: Fira Code;
+	font-size: 24px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: normal;
+}
+
+.quoteAuthor {
+	display: flex;
+	padding: 16px;
+	align-items: flex-start;
+	gap: 10px;
+	border: 1px solid #abb2bf;
+	color: #fff;
+	font-family: Fira Code;
+	font-size: 24px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+}

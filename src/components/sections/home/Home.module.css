@@ -1,8 +1,10 @@
 .homeMainWrapper {
 	align-items: center;
 	display: flex;
+	height: 45vh;
 	justify-content: space-between;
 	padding: 120px 170px;
+	gap: 20px;
 }
 
 .textWrapper {
@@ -32,10 +34,25 @@
 	margin-top: 32px;
 }
 
+.imageWrapper {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
 .image {
 	max-width: 25vw;
 }
 
+.statusBlock {
+	margin-top: -25px;
+}
+
 .mainButton {
 	margin-top: 24px;
+}
+
+.quote {
+	display: flex;
+	justify-content: center;
 }

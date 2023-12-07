@@ -1,5 +1,5 @@
 import { FC } from 'react'
-import { ButtonVariant } from '../../enums/ButtonVariant.enum'
+import { ButtonVariant } from '../../../enums/ButtonVariant.enum'
 import styles from './Button.module.css'
 
 interface Props extends React.HTMLAttributes<HTMLButtonElement> {

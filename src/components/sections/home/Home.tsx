@@ -1,9 +1,10 @@
-import { FC } from 'react'
+import { FC, useState } from 'react'
 import styles from './Home.module.css'
-import { MAIN_TEXT } from '../../../constants/home/home'
 import mainImage from '../../../assets/images/ishan-main.png'
 import Button from '../../ui/buttons/Button'
 import Status from './Status'
+import InputBox from '../../ui/inputs/InputBox'
+import Quote from './Quote'
 
 interface Props {}
 
@@ -22,10 +23,13 @@ const Home: FC<Props> = ({}) => {
 					</div>
 					<Button className={styles.mainButton}>Contact Me!!</Button>
 				</div>
-				<div>
+				<div className={styles.imageWrapper}>
 					<img className={styles.image} src={mainImage} alt="Ishan" />
-					<Status />
+					<Status className={styles.statusBlock} />
 				</div>
+			</div>
+			<div className={styles.quote}>
+				<Quote />
 			</div>
 		</section>
 	)

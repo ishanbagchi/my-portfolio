@@ -1,0 +1,22 @@
+.navLinksWrapper {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100%;
+	gap: 32px;
+	width: 100%;
+}
+
+.navLink {
+	cursor: pointer;
+	font-weight: 400;
+	transition: all 0.2s ease-in-out;
+
+	&:hover {
+		font-weight: 600;
+	}
+}
+
+.navLink > span {
+	color: #c778dd;
+}

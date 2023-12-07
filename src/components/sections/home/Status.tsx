@@ -1,11 +1,13 @@
 import { FC } from 'react'
 import styles from './Status.module.css'
 
-interface Props {}
+interface Props {
+	className?: string
+}
 
-const Status: FC<Props> = ({}) => {
+const Status: FC<Props> = ({ className }) => {
 	return (
-		<div className={styles.statusWrapper}>
+		<div className={`${styles.statusWrapper} ${className}`}>
 			<div className={styles.statusBox} />
 			<div className={styles.statusText}>
 				Currently working on <span>Portfolio</span>

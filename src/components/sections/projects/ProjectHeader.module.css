@@ -1,0 +1,25 @@
+.projectHeaderWrapper {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 140px 170px 0 170px;
+}
+
+.textWrapper {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 16px;
+}
+
+.headerLine {
+	width: 35vw;
+	height: 2px;
+	background-color: #c778dd;
+}
+
+.viewAllBtn:hover {
+	font-weight: 600;
+	cursor: pointer;
+	transition: all 0.2s ease-in-out;
+}

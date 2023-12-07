@@ -1,0 +1,12 @@
+.titleWrapper {
+	color: var(--white, #fff);
+	font-family: Fira Code;
+	font-size: 32px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: normal;
+
+	> span {
+		color: #c778dd;
+	}
+}
