@@ -1,18 +1,23 @@
 import { FC } from 'react'
+import { mainProjects } from '../../../constants/projects'
+import ProjectCard from '../../ui/cards/ProjectCard'
+import styles from './ProjectList.module.css'
 
 interface Props {}
 
 const ProjectList: FC<Props> = ({}) => {
 	return (
-		<section>
+		<section className={styles.projectListWrapper}>
 			{mainProjects.map((project) => {
 				return (
-					<div key={project.id}>
-						<h3>{project.title}</h3>
-						<p>{project.description}</p>
-						{project.isCached ? <p>Cached</p> : null}
-						<p>{project.link}</p>
-					</div>
+					<ProjectCard
+						key={project.id}
+						toolsUsed={project.tools}
+						title={project.title}
+						description={project.description}
+						isCached={project.isCached}
+						link={project.link}
+					/>
 				)
 			})}
 		</section>

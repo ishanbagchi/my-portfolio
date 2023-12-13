@@ -6,12 +6,14 @@ interface Props extends React.HTMLAttributes<HTMLButtonElement> {
 	variant?: ButtonVariant
 	disabled?: boolean
 	className?: string
+	link?: string
 	children?: React.ReactNode
 }
 
 const Button: FC<Props> = ({
 	variant = ButtonVariant.PRIMARY,
 	disabled = false,
+	link,
 	className,
 	children,
 	...props
@@ -26,11 +28,16 @@ const Button: FC<Props> = ({
 				return styles.primary
 		}
 	}
-	return (
-		<button
-			className={`${styles.btn} ${getVariantClassNames()} ${className}`}
-			{...props}
-		>
+	const classNames = `${styles.btn} ${getVariantClassNames()} ${
+		disabled ? styles.disabled : ''
+	} ${className}`
+
+	return link ? (
+		<a href={link} className={classNames} target="_blank" rel="noreferrer">
+			{children}
+		</a>
+	) : (
+		<button className={classNames} {...props}>
 			{children}
 		</button>
 	)

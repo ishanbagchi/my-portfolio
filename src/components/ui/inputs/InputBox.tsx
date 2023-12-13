@@ -1,4 +1,4 @@
-import { FC, useState } from 'react'
+import { FC } from 'react'
 import styles from './InputBox.module.css'
 
 interface Props {
@@ -8,7 +8,6 @@ interface Props {
 }
 
 const InputBox: FC<Props> = ({ value, label, onChange }) => {
-	// const [value, setValue] = useState('')
 	const handleOnChange = (e: React.ChangeEvent<HTMLInputElement>): void => {
 		onChange(e.target.value)
 	}
